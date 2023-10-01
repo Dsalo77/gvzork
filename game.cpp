@@ -109,5 +109,29 @@ map<string, NPC> Game::NPCSetup() {
 }
 
 void Game::locationSetup() {
+        // Create and add locations to the game world
+        Location forest("The Forest", "A dense forest with tall trees.");
+        Location cave("Dark Cave", "A deep, dark cave with mysterious echoes.");
+        Location river("River", "A deep river.");
+        Location house("Old house", "An old falling apart house");
+        Location tree("Golden tree", "A stunning Golden Tree");
+        Location road("CrossRoads", "Many ways to go from here");
+        Location hills("Hills", "Grassy hills");
+        Location lake("lake", "A crystal clear lake");
 
+        // Add locations to the vector
+        locationsThatExistInTheWorld.push_back(forest);
+        locationsThatExistInTheWorld.push_back(cave);
+        locationsThatExistInTheWorld.push_back(river);
+        locationsThatExistInTheWorld.push_back(house);
+        locationsThatExistInTheWorld.push_back(tree);
+        locationsThatExistInTheWorld.push_back(road);
+        locationsThatExistInTheWorld.push_back(hills);
+        locationsThatExistInTheWorld.push_back(lake);
+
+        //here to test if location was added to game world
+        currentLocation = forest;
+        cout << currentLocation << endl;
+        currentLocation = lake;
+        cout << currentLocation << endl;
 }
